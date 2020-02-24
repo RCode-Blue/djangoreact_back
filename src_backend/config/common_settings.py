@@ -1,8 +1,13 @@
 import os
 
 if(os.environ["DJANGO_ENV"]=="dev"):
+  print ("dev_settings")
   from .dev_settings import *
+elif(os.environ["DJANGO_ENV"]=="test"):
+  print ("test_settings")
+  from .test_settings import *
 elif(os.environ["DJANGO_ENV"]=="prod"):
+  print ("prod_settings")
   from .prod_settings import *
 
 # try:
@@ -49,10 +54,11 @@ INSTALLED_APPS = [
 SITE_ID = 1
 
 MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-
-    'django.middleware.security.SecurityMiddleware',
+    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -86,12 +92,12 @@ WSGI_APPLICATION = 'src_backend.wsgi.application'
 
 
 # Database
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
  
 # Password validation
