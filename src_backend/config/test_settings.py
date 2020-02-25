@@ -5,7 +5,6 @@ import psycopg2
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-DATABASE_URL = "postgres://jiekaflnbuzhgm:d1b4f0332b280cb829df9d4efb2ccd762d2716ba142fcce482f06298a0b2e117@ec2-35-172-85-250.compute-1.amazonaws.com:5432/d4r30ptm96tc6c"
 # conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 SECRET_KEY = os.urandom(24)
