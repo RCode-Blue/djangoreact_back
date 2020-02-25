@@ -39,8 +39,8 @@ dev.js
 # ------
 venv
 *.pyc
-# src_backend/build/static/*
-# src_backend/staticfiles/*
+src_backend/build/static/*
+src_backend/staticfiles/*
 
 
 
