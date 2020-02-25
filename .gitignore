@@ -1,3 +1,8 @@
+# ide
+# ---
+.vscode
+
+
 # node:
 # ----
 
@@ -35,6 +40,9 @@ dev.js
 venv
 requirements_old.txt
 *.pyc
+src_backend/build/static/*
+src_backend/staticfiles/*
 
 
-.vscode
+
+
