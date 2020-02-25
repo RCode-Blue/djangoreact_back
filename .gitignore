@@ -38,10 +38,9 @@ dev.js
 # python
 # ------
 venv
-requirements_old.txt
 *.pyc
-src_backend/build/static/*
-src_backend/staticfiles/*
+# src_backend/build/static/*
+# src_backend/staticfiles/*
 
 
 
