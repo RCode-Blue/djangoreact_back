@@ -16,7 +16,6 @@ DEBUG = True
 
 # Database
 
-db_uri = "postgres://pyeqawka:7sGHP58sHy4MIdC3DO6gP_irgwa7JDUv@rosie.db.elephantsql.com:5432/pyeqawka"
 
 DATABASES = {
   "default":{
